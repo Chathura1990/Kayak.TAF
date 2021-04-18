@@ -54,7 +54,8 @@ namespace UiTests
             _container.RegisterInstance(StepsContext.Value)
                 .RegisterType<HttpClient>()
                 .RegisterType<BaseUiSteps>()
-                .RegisterType<FlightSearchUiSteps>();
+                .RegisterType<FlightSearchUiSteps>()
+                .RegisterType<FlightSearchResultUiSteps>();
 
             Logger.Debug("[UNITY] Container is initialized");
             Logger.Debug("[OneTimeSetUp] Feature SetUp is finished");
